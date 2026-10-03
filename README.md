@@ -1,2 +1,2 @@
-# My-first-website
+# My website
 First Git Repo

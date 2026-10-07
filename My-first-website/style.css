@@ -335,6 +335,49 @@ header {
     margin-top: 10px;
 }
 
+.why-choose-nestly {
+    padding: 40px;
+    text-align: center; 
+}
 
+.why-choose-nestly h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #1F1F1F;
+}
 
+.why-choose-nestly .reasons-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
 
+.why-choose-nestly .reason-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.why-choose-nestly .reason-item:hover {
+    transform: translateY(-5px);
+}
+
+.why-choose-nestly .reason-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.why-choose-nestly .reason-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+.why-choose-nestly .reason-item .description {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #666;
+}

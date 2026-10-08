@@ -376,8 +376,49 @@ header {
     font-size: 18px;
     color: #333;
 }
+
 .why-choose-nestly .reason-item .description {
     margin-top: 8px;
     font-size: 14px;
     color: #666;
+}
+
+.newsletter-subscription {
+    padding: 40px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.newsletter-subscription h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #1F1F1F;
+}
+
+.newsletter-subscription form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter-subscription input{
+    padding : 10px;
+    width : 300px;
+    border : 1px solid #ccc;
+    border-radius : 4px;
+    font-size: 16px;
+}
+
+.newsletter-subscription button {
+    background-color: #0d8711;
+    color:white;
+    border: none;
+    padding: 10px 20px;
+    border-radius:  4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.newsletter-subscription button:hover {
+    filter: brightness(90%);
 }

@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #f8f7f2;
     color: #333333;
 }
@@ -19,9 +19,6 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 20px;  
-    background-image: url('images/gharly.png');
-    background-size: cover;
-    background-position: center;
 }
 
 .search-bar {
@@ -100,7 +97,7 @@ header {
     justify-content:space-between;
     align-items: center;
     padding: 40px;
-    background-image: url('image/gharly.png');
+    background-image: url('images/gharly.png');
     background-size: cover;
     background-position: center;
     min-height: 350px;
@@ -189,7 +186,8 @@ header {
 .category-item img {
     width: 100%;    
     height: 150px;
-    object-fit: cover;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .category-item p {
@@ -231,7 +229,8 @@ header {
 .product-item img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .product-item h3 {
@@ -301,7 +300,8 @@ header {
 .items-under-100 .product-item img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .items-under-100 .product-item h3 {
@@ -367,8 +367,8 @@ header {
 .why-choose-nestly .reason-item img {
     width: 100%;
     height: 150px;
-    object-fit: cover;
-    border-radius: 4px;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .why-choose-nestly .reason-item h3 {
@@ -421,4 +421,144 @@ header {
 
 .newsletter-subscription button:hover {
     filter: brightness(90%);
+}
+
+.nestly-information {
+    background-color:#333;
+    color: #f8f7f2;
+    padding: 40px;
+    text-align: center;
+}
+
+.nestly-information h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color:#ffd166;
+}
+
+.nestly-information > p {
+    max-width: 700px;
+    margin:0 auto 30px;
+    line-height: 1.6;
+    color: rgb(236, 236, 236);
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.footer-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:#FFD166;
+}
+
+.footer-links ul {
+    list-style:none;
+    padding: 0%;
+    margin: 0%;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #ffd166;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+
+ @media (max-width:768px) {
+        .product-list {
+            grid-template-columns: repeat(2,1fr);
+    }
+
+      .category-list {
+            grid-template-columns: repeat(2,1fr);
+    }
+
+      .items-under-100 .product-list {
+            grid-template-columns: repeat(2,1fr);
+    } 
+
+      .why-choose-nestly .reasons-list {
+            grid-template-columns: repeat(2,1fr);
+    }
+
+     header {
+        flex-wrap: wrap;
+    }
+
+    .search-bar {
+        flex-basis: 100% ;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+}
+
+
+@media (max-width:480px) {
+    .product-list {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+     .category-list {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+     .items-under-100 .product-list {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+     .why-choose-nestly .reasons-list {
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+      .footer-links {
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+    
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .login-button,
+    .cart button {
+        padding: 8px 12px;
+    }
+
+    .newsletter-subscription form {
+        flex-direction: column;
+    }
+    
+    .newsletter-subscription input {
+        width: 100%;
+        max-width: 100% ;
+    }
+
 }
